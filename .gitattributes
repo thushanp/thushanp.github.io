@@ -1,3 +1,5 @@
 css/* linguist-vendored
 vendor/* linguist-vendored
 img/* inguist-vendored
+
+*.rb linguist-language=Text
