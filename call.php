@@ -41,4 +41,4 @@
         echo "Started call: " . $call->sid;
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
-    }
+    } ?>
