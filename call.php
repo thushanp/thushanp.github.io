@@ -19,7 +19,7 @@
     
     // Step 2: Set our AccountSid and AuthToken from https://twilio.com/console
     $AccountSid = "ACf0bef51e5a407e3ace365f87a23ccb46";
-    $AuthToken = "your_auth_token";
+    $AuthToken = "5e7b2c6563764d0d62dc00e18e1b5853";
 
     // Step 3: Instantiate a new Twilio Rest Client
     $client = new Client($AccountSid, $AuthToken);
@@ -29,16 +29,19 @@
         $call = $client->account->calls->create(
             // Step 4: Change the 'To' number below to whatever number you'd like 
             // to call.
-            "+15558675309",
+            "+16175159619",
 
             // Step 5: Change the 'From' number below to be a valid Twilio number 
             // that you've purchased or verified with Twilio.
-            "+15017250604",
+            "+14054001401",
 
             // Step 6: Set the URL Twilio will request when the call is answered.
-            array("url" => "http://demo.twilio.com/welcome/voice/")
+            array("url" => "https://www.dl.dropboxusercontent.com/s/8twqvptu71pq8rd/01%20Frank%20Ocean%20-%20Lost_1.mp3?dl=0")
         );
         echo "Started call: " . $call->sid;
     } catch (Exception $e) {
         echo "Error: " . $e->getMessage();
-    } ?>
+    }
+
+
+    
