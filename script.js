@@ -28,7 +28,7 @@ var tabulate = function (data,columns) {
   return table;
 }
 
-d3.csv('data.csv',function (data) {
-	var columns = ['variable','aror','asd','maxdd']
+d3.csv('letsgo.csv',function (data) {
+	var columns = ['car name',	'milesgallon',	'cylinder',	'displacement',	'horsepower',	'weight',	'acceleration',	'model year','origin']
   tabulate(data,columns)
 })
